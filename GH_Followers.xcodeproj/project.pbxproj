@@ -15,6 +15,12 @@
 		0964C430299C3109003639D8 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0964C42F299C3109003639D8 /* FavoritesListVC.swift */; };
 		0964C432299C399D003639D8 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0964C431299C399D003639D8 /* GFButton.swift */; };
 		0964C434299C3D8F003639D8 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0964C433299C3D8F003639D8 /* GFTextField.swift */; };
+		0964C436299D8061003639D8 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0964C435299D8061003639D8 /* FollowerListVC.swift */; };
+		0964C438299DBF1D003639D8 /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0964C437299DBF1C003639D8 /* GFTitleLabel.swift */; };
+		0964C43A299DC132003639D8 /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0964C439299DC132003639D8 /* GFBodyLabel.swift */; };
+		0964C43C299DC22E003639D8 /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0964C43B299DC22E003639D8 /* GFAlertVC.swift */; };
+		0964C43E299DCE14003639D8 /* UIViewController+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0964C43D299DCE14003639D8 /* UIViewController+EXT.swift */; };
+		0964C444299DD5C6003639D8 /* GFContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0964C443299DD5C6003639D8 /* GFContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		0964C42F299C3109003639D8 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 		0964C431299C399D003639D8 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		0964C433299C3D8F003639D8 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
+		0964C435299D8061003639D8 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
+		0964C437299DBF1C003639D8 /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
+		0964C439299DC132003639D8 /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
+		0964C43B299DC22E003639D8 /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
+		0964C43D299DCE14003639D8 /* UIViewController+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+EXT.swift"; sourceTree = "<group>"; };
+		0964C443299DD5C6003639D8 /* GFContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,17 +107,55 @@
 		0964C3FC299C29DF003639D8 /* GH_Followers */ = {
 			isa = PBXGroup;
 			children = (
-				0964C431299C399D003639D8 /* GFButton.swift */,
-				0964C433299C3D8F003639D8 /* GFTextField.swift */,
-				0964C3FD299C29DF003639D8 /* AppDelegate.swift */,
-				0964C3FF299C29DF003639D8 /* SceneDelegate.swift */,
-				0964C42D299C30E2003639D8 /* SearchVC.swift */,
-				0964C42F299C3109003639D8 /* FavoritesListVC.swift */,
-				0964C406299C29E1003639D8 /* Assets.xcassets */,
-				0964C408299C29E1003639D8 /* LaunchScreen.storyboard */,
 				0964C40B299C29E1003639D8 /* Info.plist */,
+				0964C442299DD322003639D8 /* Support */,
+				0964C441299DD299003639D8 /* Extension */,
+				0964C440299DD265003639D8 /* Custom Views */,
+				0964C43F299DD215003639D8 /* Screens */,
 			);
 			path = GH_Followers;
+			sourceTree = "<group>";
+		};
+		0964C43F299DD215003639D8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0964C435299D8061003639D8 /* FollowerListVC.swift */,
+				0964C42F299C3109003639D8 /* FavoritesListVC.swift */,
+				0964C42D299C30E2003639D8 /* SearchVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0964C440299DD265003639D8 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				0964C43B299DC22E003639D8 /* GFAlertVC.swift */,
+				0964C431299C399D003639D8 /* GFButton.swift */,
+				0964C433299C3D8F003639D8 /* GFTextField.swift */,
+				0964C437299DBF1C003639D8 /* GFTitleLabel.swift */,
+				0964C439299DC132003639D8 /* GFBodyLabel.swift */,
+				0964C443299DD5C6003639D8 /* GFContainerView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		0964C441299DD299003639D8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0964C43D299DCE14003639D8 /* UIViewController+EXT.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0964C442299DD322003639D8 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				0964C3FD299C29DF003639D8 /* AppDelegate.swift */,
+				0964C3FF299C29DF003639D8 /* SceneDelegate.swift */,
+				0964C406299C29E1003639D8 /* Assets.xcassets */,
+				0964C408299C29E1003639D8 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,8 +292,14 @@
 				0964C430299C3109003639D8 /* FavoritesListVC.swift in Sources */,
 				0964C432299C399D003639D8 /* GFButton.swift in Sources */,
 				0964C42E299C30E2003639D8 /* SearchVC.swift in Sources */,
+				0964C43C299DC22E003639D8 /* GFAlertVC.swift in Sources */,
+				0964C43A299DC132003639D8 /* GFBodyLabel.swift in Sources */,
+				0964C438299DBF1D003639D8 /* GFTitleLabel.swift in Sources */,
+				0964C43E299DCE14003639D8 /* UIViewController+EXT.swift in Sources */,
+				0964C444299DD5C6003639D8 /* GFContainerView.swift in Sources */,
 				0964C3FE299C29DF003639D8 /* AppDelegate.swift in Sources */,
 				0964C400299C29DF003639D8 /* SceneDelegate.swift in Sources */,
+				0964C436299D8061003639D8 /* FollowerListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
