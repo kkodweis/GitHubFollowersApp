@@ -1,5 +1,5 @@
 //
-//  ErrorMessage.swift
+//  GFError.swift
 //  GH_Followers
 //
 //  Created by Kris Kodweis on 2/16/23.
@@ -12,5 +12,6 @@ enum GFError: String, Error {
     case unableToComplete = "Unable to complete your request. Please check your internet connection"
     case invalidResponse = "Invalid Response from the server. Please try again"
     case invalidData = "The data recieved from the server was invalid please try again"
-    
+    case unableToFavorite = "There was an error favoriting this user. Please try again"
+    case alreadyInFavorites = "Already in Favorites."
 }
